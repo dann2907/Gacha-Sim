@@ -20,13 +20,13 @@ class GachaGame {
                 { name: "Makima", img: "img_1/makima.jpg" },
                 { name: "Pelakor", img: "img_1/pelakor.jpg" },
                 { name: "Elaina", img: "img_1/elaina.jpg"},
-                { name: "Masha", img: "img_1/masha.jpg}
+                { name: "Masha", img: "img_1/masha.jpg"}
             ],
             Ampas: [
                 { name: "Wiz Xmas", img: "img_1/wiz.jpg" },
                 { name: "Anna", img: "img_1/anna.jpg" },
                 { name: "Anya", img: "img_1/anya.jpg"},
-                { name: "Zero two", img: "img_1/zero_two.jpg}
+                { name: "Zero two", img: "img_1/zero_two.jpg"}
             ]
         };
     }
