@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gacha Waifu</title>
+    <link href="https://unpkg.com/css.gg@2.0.0/icons/css/coin.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">GACHA SIMULATOR</h1>
+            <div class="chance-note">0.01% chance waifu jadi nyata😱</div>
+        </div>
+
+        <div class="controls">
+            <div class="balance-card">
+                <div class="balance-icon">
+                    <i class="gg-coin"></i>
+                </div>
+                <div>
+                    <div class="balance-label">Current Balance</div>
+                    <div class="balance-amount" id="balance">$0.00</div>
+                    <div class="spent-amount">Total Spent: $<span id="totalSpent">0.00</span></div>
+                </div>
+            </div>
+            
+            <div class="gacha-buttons">
+                <button class="neon-button" onclick="addBalance()">Add Balance</button>
+                <button class="neon-button" onclick="pull(1)">Pull 1x ($2.3)</button>
+                <button class="neon-button pull-10x" onclick="pull(10)">Pull 10x ($20.7)</button>
+                <button class="neon-button clear-history" onclick="clearHistory()">Clear History</button>
+            </div>
+        </div>
+
+        <div class="pity-counter">
+            🔮 Pity Counter: <span id="counter">0</span>/100
+        </div>
+
+        <div class="results-grid" id="results"></div>
+        <div class="stats-panel" id="stats"></div>
+
+        <!-- Notifikasi SSR -->
+        <div id="ssrNotification" class="ssr-notification">
+            🎉 SSR Acquired! 🎉
+        </div>
+    </div>
+
+    <!-- SFX -->
+    <audio id="pullSFX" src="sfx/pull.wav"></audio>
+    <audio id="ssrSFX" src="sfx/ssr.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
